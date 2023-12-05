@@ -1,0 +1,43 @@
+VERSION = 1,
+
+option CommonSense.PryingMechanic
+{
+    type = boolean,
+    default = true,
+    page = CommonSense,
+    translation = CommonSense_PryingMechanic,
+}
+
+option CommonSense.PryAllDoors
+{
+    type = boolean,
+    default = false,
+    page = CommonSense,
+    translation = CommonSense_PryAllDoors,
+}
+
+option CommonSense.PartsHighlighter
+{
+    type = boolean,
+    default = true,
+    page = CommonSense,
+    translation = CommonSense_PartsHighlighter,
+}
+
+option CommonSense.ColorFilter
+{
+    type = boolean,
+    default = false,
+    page = CommonSense,
+    translation = CommonSense_ColorFilter,
+}
+
+option CommonSense.PryingChanceMultiplier
+{
+    type = double,
+    min = 0,
+    default = 1,
+    max = 5,
+    page = CommonSense,
+    translation = CommonSense_PryingChanceMultiplier,
+}

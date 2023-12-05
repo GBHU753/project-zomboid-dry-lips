@@ -1,0 +1,6 @@
+name=DryLips
+id=DryLips
+description=Adds the dry lips mechanic.
+poster=DryLips.png
+require=MoodleFramework
+icon=DryLipsIcon.png
