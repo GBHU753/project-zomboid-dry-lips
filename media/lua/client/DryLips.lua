@@ -19,6 +19,8 @@ local moodleThreshold = { 0.1, 0.2, 0.3, 0.4, 0.6, 0.7, 0.8, 0.9 };
 local function DryLipsMoodleUpdate()
     local player = getPlayer();
 
+    local moodle = MF.getMoodle("DryLips");     --get access to the moodle with that name associated to getPlayer
+
 
     -- guard case to check if the lip dryness value is set
     -- if not, set it to 0
@@ -26,10 +28,11 @@ local function DryLipsMoodleUpdate()
     if myModData.LipDryness == nil then
         myModData.LipDryness = 0;
         myModData.LipDryMoodlePos = 7;
+        moodle:setValue(moodleThreshold[myModData.LipDryMoodlePos]);
     end
 
 
-    local moodle = MF.getMoodle("DryLips");     --get access to the moodle with that name associated to getPlayer
+    
 
 
     print("LipDryness: " .. myModData.LipDryness);
