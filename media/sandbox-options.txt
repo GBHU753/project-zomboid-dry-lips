@@ -2,7 +2,7 @@ VERSION = 1,
 
 option DryLips.HoursTill
 {
-    type = double,
+    type = integer,
     min = 1,
     default = 1,
     max = 1000,
